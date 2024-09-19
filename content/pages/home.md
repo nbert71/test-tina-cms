@@ -7,7 +7,7 @@ links:
   - header: Docs Smartfire !
     description: Find in-depth information about Next.js features and API.
     url: 'https://nextjs.org/docs?utm_source=create-next-app'
-  - header: Learn
+  - header: Learn TinaCMS
     description: Learn about Next.js in an interactive course with quizzes!
     url: 'https://nextjs.org/learn?utm_source=create-next-app'
   - header: Templates
