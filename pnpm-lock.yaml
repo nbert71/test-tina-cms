@@ -12,8 +12,8 @@ importers:
         specifier: ^1.6.1
         version: 1.6.1(@codemirror/language@6.0.0)(@types/node@22.5.1)(@types/react-dom@18.3.0)(@types/react@18.3.4)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.4)(scheduler@0.23.2)
       '@tinacms/datalayer':
-        specifier: ^1.3.1
-        version: 1.3.1(react@18.3.1)(typescript@5.5.4)
+        specifier: ^1.3.3
+        version: 1.3.3(react@18.3.1)(typescript@5.5.4)
       next:
         specifier: 14.2.1
         version: 14.2.1(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -33,8 +33,8 @@ importers:
         specifier: ^5.0.1
         version: 5.0.1(next-auth@4.24.7(next@14.2.1(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.2.1(@babel/core@7.25.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(tinacms@2.2.1(@types/react-dom@18.3.0)(@types/react@18.3.4)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(typescript@5.5.4))(yup@1.4.0)
       tinacms-gitprovider-github:
-        specifier: ^2.0.1
-        version: 2.0.1(@tinacms/datalayer@1.3.1(react@18.3.1)(typescript@5.5.4))
+        specifier: ^2.0.3
+        version: 2.0.3(@tinacms/datalayer@1.3.3(react@18.3.1)(typescript@5.5.4))
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -1658,14 +1658,20 @@ packages:
     resolution: {integrity: sha512-OOIlt0Y072g5BNinOsfLKLDexj12FnRjRoem/yZrOC4vOQcDsUzpOplEgDjU9VKK9Igt2A/L4PhvW921Wvfk4A==}
     hasBin: true
 
-  '@tinacms/datalayer@1.3.1':
-    resolution: {integrity: sha512-mKe3rNelomFu5NRlpwLr1ql21vC3eU4cUsA7j9hFCmSNuxcpmVFKjbMklBXBrYMsprrezqdwPhWM0Kye5Gbu6A==}
+  '@tinacms/datalayer@1.3.3':
+    resolution: {integrity: sha512-LLq3Be6LTG0Q2BwJk8ccRZic2UixmPlW3hwnAS/v4CuDPLyYOR6Khi6q5Cw+Vfoed/jbLkOe/m7Ip9WyMu7XbA==}
 
   '@tinacms/graphql@1.5.1':
     resolution: {integrity: sha512-2mYDl6C4XKBW1J4JpyqNyCMadLxPqI+6NOUUZ85J9wFWokMmQALhbZ9v18z+TcNloe4Scg2qk3B4Sp0sDwX1+g==}
 
+  '@tinacms/graphql@1.5.3':
+    resolution: {integrity: sha512-e9LLHwue7p1sZ7bDYCvCaKmYe8Z4hPKAPz+QMbH0QNGAVR1B74di+HtgJ8oePPx8rngdPmqGd6g8q+R0Yizr2Q==}
+
   '@tinacms/mdx@1.4.1':
     resolution: {integrity: sha512-4lOgVFEmoVyqPNBZAb68NZ4ans4QQSEbAOEFqXcK4TL+/Xvmang0BasNaW7rMAeXvx1JcS9xqbZZ/+u+ODjIWg==}
+
+  '@tinacms/mdx@1.4.3':
+    resolution: {integrity: sha512-kQqnQMp8NcmtLypXfI7A8mNp4HvbtAANeSQSUSfgaW6aAmIdZq2LHiBeXK/WC29/TsfHILShubZM1TDgvHZVxA==}
 
   '@tinacms/metrics@1.0.5':
     resolution: {integrity: sha512-6kbhj5B0V7G5nRM4mj9BGh2++rI46bOe5VaGMoRMc/cpISfk933oTmQWwbFdLrQ0ZXsUSPmYC6Iun6SKvFKHtQ==}
@@ -1674,6 +1680,12 @@ packages:
 
   '@tinacms/schema-tools@1.6.1':
     resolution: {integrity: sha512-5NEojDei926R1A2fVudgpFcd1S2iJzXNZaW25r/ARWCKZ/2GLL/tmXY3S9BOJdO1fS60HvpBSfHRgvHxKPn49g==}
+    peerDependencies:
+      react: '>=16.14.0'
+      yup: ^0.32.0
+
+  '@tinacms/schema-tools@1.6.3':
+    resolution: {integrity: sha512-qGjBsudbhs0nWSkMOgPZ7VdSxVVA8VMpGlfKDI+qyxJXZ/HVZUOc6Xj0dhmAf36x2oTCAhtbniymSBIlkaSNWQ==}
     peerDependencies:
       react: '>=16.14.0'
       yup: ^0.32.0
@@ -5315,10 +5327,10 @@ packages:
       react-dom: ^17.0.2 || ^18
       tinacms: 2.2.1
 
-  tinacms-gitprovider-github@2.0.1:
-    resolution: {integrity: sha512-U964SanrW4p4z61CsRKcGFNfIYd3le0hAi8UYxCxPd1Q1jOk8HZ5mEIabEGjxdO4ijMhsEmztZX5Eo0dxAo9rQ==}
+  tinacms-gitprovider-github@2.0.3:
+    resolution: {integrity: sha512-Ump7Yo4zH8fwG4SJC5GojzS/IPptZlPnqY2h5TddR4OSzmii1ON7pbhkIZCwlLjV4gPisyZRiFnvOeN/7KGirQ==}
     peerDependencies:
-      '@tinacms/datalayer': 1.3.1
+      '@tinacms/datalayer': 1.3.3
 
   tinacms@2.2.1:
     resolution: {integrity: sha512-6IMbdNYIGGOQ5ZZtAFqiaNuNFx1K/VJhVq3JcSwlAwB3GDkz7V5bZSFus0UpofeBNv3Bo1nj3JYOwegX3Z+lfA==}
@@ -5442,13 +5454,13 @@ packages:
     peerDependencies:
       typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x || 5.1.x || 5.2.x || 5.3.x || 5.4.x || 5.5.x
 
-  typescript@4.7.4:
-    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
-    engines: {node: '>=4.2.0'}
-    hasBin: true
-
   typescript@5.5.4:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -6514,14 +6526,14 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@15.8.0)':
     dependencies:
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   '@graphql-tools/relay-operation-optimizer@7.0.1(graphql@15.8.0)':
     dependencies:
       '@ardatan/relay-compiler': 12.0.0(graphql@15.8.0)
       '@graphql-tools/utils': 10.5.4(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.7.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -6540,7 +6552,7 @@ snapshots:
       cross-inspect: 1.0.1
       dset: 3.1.3
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   '@graphql-tools/utils@9.2.1(graphql@15.8.0)':
     dependencies:
@@ -7608,9 +7620,9 @@ snapshots:
       - terser
       - ts-node
 
-  '@tinacms/datalayer@1.3.1(react@18.3.1)(typescript@5.5.4)':
+  '@tinacms/datalayer@1.3.3(react@18.3.1)(typescript@5.5.4)':
     dependencies:
-      '@tinacms/graphql': 1.5.1(react@18.3.1)(typescript@5.5.4)
+      '@tinacms/graphql': 1.5.3(react@18.3.1)(typescript@5.5.4)
     transitivePeerDependencies:
       - react
       - supports-color
@@ -7637,6 +7649,36 @@ snapshots:
       lodash.uniqby: 4.7.0
       many-level: 2.0.0
       micromatch: 4.0.5
+      normalize-path: 3.0.0
+      readable-stream: 4.5.2
+      scmp: 2.1.0
+      yup: 0.32.11
+    transitivePeerDependencies:
+      - react
+      - supports-color
+      - typescript
+
+  '@tinacms/graphql@1.5.3(react@18.3.1)(typescript@5.5.4)':
+    dependencies:
+      '@iarna/toml': 2.2.5
+      '@tinacms/mdx': 1.4.3(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)
+      '@tinacms/schema-tools': 1.6.3(react@18.3.1)(yup@0.32.11)
+      abstract-level: 1.0.4
+      date-fns: 2.30.0
+      fast-glob: 3.3.2
+      fs-extra: 9.1.0
+      glob-parent: 6.0.2
+      graphql: 15.8.0
+      gray-matter: 4.0.3
+      isomorphic-git: 1.27.1
+      js-sha1: 0.6.0
+      js-yaml: 3.14.1
+      jsonpath-plus: 6.0.1
+      lodash.clonedeep: 4.5.0
+      lodash.set: 4.3.2
+      lodash.uniqby: 4.7.0
+      many-level: 2.0.0
+      micromatch: 4.0.8
       normalize-path: 3.0.0
       readable-stream: 4.5.2
       scmp: 2.1.0
@@ -7722,6 +7764,44 @@ snapshots:
       - typescript
       - yup
 
+  '@tinacms/mdx@1.4.3(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)':
+    dependencies:
+      '@tinacms/schema-tools': 1.6.3(react@18.3.1)(yup@0.32.11)
+      acorn: 8.8.2
+      ccount: 2.0.1
+      estree-util-is-identifier-name: 2.1.0
+      lodash.flatten: 4.4.0
+      mdast-util-compact: 4.1.1
+      mdast-util-directive: 2.2.4
+      mdast-util-from-markdown: 1.3.0
+      mdast-util-gfm: 2.0.2
+      mdast-util-mdx-jsx: 2.1.2
+      mdast-util-to-markdown: 1.5.0
+      micromark-extension-gfm: 2.0.3
+      micromark-factory-mdx-expression: 1.0.7
+      micromark-factory-space: 1.0.0
+      micromark-factory-whitespace: 1.0.0
+      micromark-util-character: 1.1.0
+      micromark-util-symbol: 1.0.1
+      micromark-util-types: 1.0.2
+      parse-entities: 4.0.1
+      prettier: 2.8.8
+      remark: 14.0.2
+      remark-gfm: 2.0.0
+      remark-mdx: 2.3.0
+      stringify-entities: 4.0.3
+      typedoc: 0.26.6(typescript@5.5.4)
+      unist-util-source: 4.0.2
+      unist-util-stringify-position: 3.0.3
+      unist-util-visit: 4.1.2
+      uvu: 0.5.6
+      vfile-message: 3.1.4
+    transitivePeerDependencies:
+      - react
+      - supports-color
+      - typescript
+      - yup
+
   '@tinacms/metrics@1.0.5(fs-extra@9.1.0)':
     dependencies:
       fs-extra: 9.1.0
@@ -7743,6 +7823,14 @@ snapshots:
       react: 18.3.1
       url-pattern: 1.0.3
       yup: 1.4.0
+      zod: 3.23.8
+
+  '@tinacms/schema-tools@1.6.3(react@18.3.1)(yup@0.32.11)':
+    dependencies:
+      picomatch-browser: 2.2.6
+      react: 18.3.1
+      url-pattern: 1.0.3
+      yup: 0.32.11
       zod: 3.23.8
 
   '@tinacms/search@1.0.27(abstract-level@1.0.4)(react@18.3.1)(typescript@5.5.4)(yup@0.32.11)':
@@ -8567,10 +8655,6 @@ snapshots:
     dependencies:
       acorn: 8.12.1
 
-  acorn-jsx@5.3.2(acorn@8.8.2):
-    dependencies:
-      acorn: 8.8.2
-
   acorn@8.12.1: {}
 
   acorn@8.8.2: {}
@@ -8870,7 +8954,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   camelcase-css@2.0.1: {}
 
@@ -8883,7 +8967,7 @@ snapshots:
   capital-case@1.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
       upper-case-first: 2.0.2
 
   catering@2.1.1: {}
@@ -8927,7 +9011,7 @@ snapshots:
       path-case: 3.0.4
       sentence-case: 3.0.4
       snake-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   character-entities-html4@2.1.0: {}
 
@@ -9035,7 +9119,7 @@ snapshots:
   constant-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
       upper-case: 2.0.2
 
   content-disposition@0.5.4:
@@ -9080,7 +9164,7 @@ snapshots:
 
   cross-inspect@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   cross-spawn@7.0.3:
     dependencies:
@@ -9986,7 +10070,7 @@ snapshots:
   header-case@2.0.4:
     dependencies:
       capital-case: 1.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   hey-listen@1.0.8: {}
 
@@ -10150,7 +10234,7 @@ snapshots:
 
   is-lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   is-map@2.0.3: {}
 
@@ -10209,7 +10293,7 @@ snapshots:
 
   is-upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   is-weakmap@2.0.2: {}
 
@@ -10440,11 +10524,11 @@ snapshots:
 
   lower-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   lru-cache@10.0.0: {}
 
@@ -10825,8 +10909,8 @@ snapshots:
 
   micromark-extension-mdxjs@1.0.1:
     dependencies:
-      acorn: 8.8.2
-      acorn-jsx: 5.3.2(acorn@8.8.2)
+      acorn: 8.12.1
+      acorn-jsx: 5.3.2(acorn@8.12.1)
       micromark-extension-mdx-expression: 1.0.8
       micromark-extension-mdx-jsx: 1.0.5
       micromark-extension-mdx-md: 1.0.1
@@ -11098,7 +11182,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   node-abi@3.67.0:
     dependencies:
@@ -11241,7 +11325,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   parent-module@1.0.1:
     dependencies:
@@ -11285,12 +11369,12 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   path-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   path-exists@4.0.0: {}
 
@@ -11855,7 +11939,7 @@ snapshots:
   sentence-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
       upper-case-first: 2.0.2
 
   serve-static@1.15.0:
@@ -11981,7 +12065,7 @@ snapshots:
 
   sponge-case@1.0.1:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   sprintf-js@1.0.3: {}
 
@@ -12128,7 +12212,7 @@ snapshots:
 
   swap-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   tabbable@6.2.0: {}
 
@@ -12201,12 +12285,12 @@ snapshots:
     transitivePeerDependencies:
       - yup
 
-  tinacms-gitprovider-github@2.0.1(@tinacms/datalayer@1.3.1(react@18.3.1)(typescript@5.5.4)):
+  tinacms-gitprovider-github@2.0.3(@tinacms/datalayer@1.3.3(react@18.3.1)(typescript@5.5.4)):
     dependencies:
       '@octokit/rest': 19.0.13
-      '@tinacms/datalayer': 1.3.1(react@18.3.1)(typescript@5.5.4)
+      '@tinacms/datalayer': 1.3.3(react@18.3.1)(typescript@5.5.4)
       js-base64: 3.7.7
-      typescript: 4.7.4
+      typescript: 5.6.2
     transitivePeerDependencies:
       - encoding
 
@@ -12307,7 +12391,7 @@ snapshots:
 
   title-case@3.0.3:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   to-fast-properties@2.0.0: {}
 
@@ -12410,9 +12494,9 @@ snapshots:
       typescript: 5.5.4
       yaml: 2.5.0
 
-  typescript@4.7.4: {}
-
   typescript@5.5.4: {}
+
+  typescript@5.6.2: {}
 
   ua-parser-js@1.0.38: {}
 
@@ -12509,11 +12593,11 @@ snapshots:
 
   upper-case-first@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   upper-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   upstash-redis-level@1.1.1:
     dependencies:
